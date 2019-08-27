@@ -13,13 +13,13 @@ function handleClick(e) {
 
 
 
-function greet (str){
-      let num = Number((str).split(":").join(""));
-      console.log(num);
-  if (num > 0 && num <1200) {
-    return "Good Morning"; 
+function greet(str){
+      let num = parseInt(str,10)
+    
+  if (num > 0 && num < 12) {
+    return "Good Morning"
   }
-  else if(num >1200 && num < 1700 ){
+  else if(num >  12 && num < 17 ){
     return "Good Afternoon"
   }
   else {
@@ -28,11 +28,10 @@ function greet (str){
 }
 
 
-
 /* Write your implementation of displayMessage() */
 
-function dispalyMessage(str){
-  document.getElementById("greeting").innerText = str
+function displayMessage(strg){
+document.querySelector("#greeting").innerText = strg;
   
 
 }
